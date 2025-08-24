@@ -679,9 +679,8 @@
         bottom: 0;
         left: -115px;
     }
-
     .mb-0 p{
-        width:500px;
+        width: 500px;
     }
 }
 
@@ -1021,8 +1020,6 @@
     background: var(--bs-dark);
 }
 /*** copyright end ***/
-
-
 
 
 
