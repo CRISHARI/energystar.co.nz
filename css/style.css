@@ -1030,7 +1030,7 @@
 }
 
 .section-title {
-    color: #00a8f7; /* Bright blue */
+    color: #f68a0a !important; /* Bright blue */
     text-align: left;
     font-size: 28px;
     font-weight: bold;
@@ -1059,7 +1059,7 @@
 }
 
 .card h3 span {
-    color: #00a8f7;
+    color: #1900f7;
     margin-left: 8px;
 }
 
