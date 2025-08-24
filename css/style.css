@@ -679,6 +679,10 @@
         bottom: 0;
         left: -115px;
     }
+
+    p{
+        width:500px;
+    }
 }
 
 @media (max-width: 991px) {
@@ -1017,6 +1021,7 @@
     background: var(--bs-dark);
 }
 /*** copyright end ***/
+
 
 
 
