@@ -103,14 +103,168 @@
                                 <div class="navbar-nav mx-0 mx-lg-auto bg-white">
                                     <a href="index.html" class="nav-item nav-link active">Home</a>
                                     <a href="about.html" class="nav-item nav-link">About</a>
-                                    <div class="nav-item dropdown">
-                                        <a href="#" class="nav-link" data-bs-toggle="dropdown">
-                                            <span class="dropdown-toggle">Service</span>
-                                        </a>
-                                        <div class="dropdown-menu">
-                                            <a href="hvac.html" class="dropdown-item">HVAC</a>
-                                            <a href="instrumentation.html" class="dropdown-item">Instrumentation &amp; Automation (Industrial)</a>
-                                            <a href="electrical.html" class="dropdown-item">Electrical Services (Industrial &amp; Commercial)</a>
+                                    <div class="nav-item dropdown megamenu">
+                                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Service</a>
+                                        <div class="dropdown-menu p-4 border-0 shadow-lg w-100" data-bs-auto-close="false">
+                                            <!-- Desktop Version -->
+                                            <div class="row d-none d-lg-flex">
+                                                <!-- Left Sidebar Tabs -->
+                                                <div class="col-lg-3 border-end">
+                                                    <div class="nav flex-column nav-pills" id="service-tabs" role="tablist">
+                                                        <button class="nav-link active" id="hvac-tab" data-bs-toggle="pill" data-bs-target="#hvac-pane" type="button" role="tab">HVAC</button>
+                                                        <button class="nav-link" id="automation-tab" data-bs-toggle="pill" data-bs-target="#automation-pane" type="button" role="tab">Instrumentation & Automation</button>
+                                                        <button class="nav-link" id="electrical-tab" data-bs-toggle="pill" data-bs-target="#electrical-pane" type="button" role="tab">Electrical Services</button>
+                                                    </div>
+                                                </div>
+
+                                                <!-- Right Side Content -->
+                                                <div class="col-lg-9">
+                                                    <div class="tab-content" id="service-tabs-content">
+
+                                                        <!-- HVAC -->
+                                                        <div class="tab-pane fade show active" id="hvac-pane" role="tabpanel">
+                                                            <div class="row">
+                                                                <div class="col-lg-4">
+                                                                    <h6 class="text-primary">Residential Services</h6>
+                                                                    <a href="hvac.html#ProjectsTab-11" class="dropdown-item">Heat Pump Solutions</a>
+                                                                    <a href="hvac.html#ProjectsTab-12" class="dropdown-item">Ducted Heat Pump Systems</a>
+                                                                    <a href="hvac.html#ProjectsTab-13" class="dropdown-item">Hot Water Heat Pumps</a>
+                                                                    <a href="hvac.html#ProjectsTab-14" class="dropdown-item">Ventilation Systems</a>
+                                                                    <a href="hvac.html#ProjectsTab-15" class="dropdown-item">Heat Recovery Ventilation (HRV) Systems</a>
+                                                                </div>
+                                                                <div class="col-lg-4">
+                                                                    <h6 class="text-primary">Commercial Services</h6>
+                                                                    <a href="hvac.html#ProjectsTab-21" class="dropdown-item">Project Management</a>
+                                                                    <a href="hvac.html#ProjectsTab-22" class="dropdown-item">Commercial HVAC Installations</a>
+                                                                    <a href="hvac.html#ProjectsTab-23" class="dropdown-item">Commissioning</a>
+                                                                    <a href="hvac.html#ProjectsTab-24" class="dropdown-item">Maintenance, Compliance & BWOF</a>
+                                                                </div>
+                                                                <div class="col-lg-4">
+                                                                    <h6 class="text-primary">Design and Engineering</h6>
+                                                                    <a href="hvac.html#ProjectsTab-1" class="dropdown-item">Innovative Value Engineering</a>
+                                                                    <a href="hvac.html#ProjectsTab-2" class="dropdown-item">Mechanical & Hydraulic Engineering</a>
+                                                                    <a href="hvac.html#ProjectsTab-3" class="dropdown-item">Seismic Design Expertise</a>
+                                                                    <a href="hvac.html#ProjectsTab-4" class="dropdown-item">Regulatory Compliance</a>
+                                                                    <a href="hvac.html#ProjectsTab-5" class="dropdown-item">Producer Statements (PS1, PS2, PS3, PS4)</a>
+                                                                    <a href="hvac.html#ProjectsTab-6" class="dropdown-item">Fixed-Fee Pricing & Early Budget Estimates</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <!-- Automation -->
+                                                        <div class="tab-pane fade" id="automation-pane" role="tabpanel">
+                                                            <div class="row">
+                                                                <div class="col-lg-6">
+                                                                    <h6 class="text-primary">Industrial</h6>
+                                                                    <a href="instrumentation.html" class="dropdown-item">Instrumentation &amp; Control</a>
+                                                                    <a href="#" class="dropdown-item">Fire &amp; Gas Mapping</a>
+                                                                    <a href="#" class="dropdown-item">Functional Safety</a>
+                                                                    <a href="#" class="dropdown-item">Machine Safety</a>
+                                                                    <a href="#" class="dropdown-item">Other Services</a>
+                                                                </div>
+                                                                <div class="col-lg-6">
+                                                                    <h6 class="text-primary">Automation</h6>
+                                                                    <a href="#" class="dropdown-item">Control Panel Manufacturing</a>
+                                                                    <a href="#" class="dropdown-item">Electronic Repairs</a>
+                                                                    <a href="#" class="dropdown-item">Rail Signaling</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <!-- Electrical -->
+                                                        <div class="tab-pane fade" id="electrical-pane" role="tabpanel">
+                                                            <div class="row">
+                                                                <div class="col-lg-6">
+                                                                    <h6 class="text-primary">Industrial</h6>
+                                                                    <a href="electrical.html" class="dropdown-item">HT & LT Systems</a>
+                                                                    <a href="#" class="dropdown-item">Panel Boards</a>
+                                                                    <a href="#" class="dropdown-item">Maintenance</a>
+                                                                </div>
+                                                                <div class="col-lg-6">
+                                                                    <h6 class="text-primary">Residential</h6>
+                                                                    <a href="#" class="dropdown-item">Wiring & Cabling</a>
+                                                                    <a href="#" class="dropdown-item">Lighting</a>
+                                                                    <a href="#" class="dropdown-item">Compliance</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- Mobile Version -->
+                                            <div class="d-lg-none">
+                                                <div class="accordion" id="serviceAccordion">
+
+                                                    <!-- HVAC -->
+                                                    <div class="accordion-item">
+                                                        <h2 class="accordion-header" id="headingHVAC">
+                                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseHVAC">
+                                                            HVAC
+                                                            </button>
+                                                        </h2>
+                                                        <div id="collapseHVAC" class="accordion-collapse collapse" data-bs-parent="#serviceAccordion">
+                                                            <div class="accordion-body">
+                                                                <a href="hvac.html#ProjectsTab-11" class="dropdown-item">Heat Pump Solutions</a>
+                                                                <a href="hvac.html#ProjectsTab-12" class="dropdown-item">Ducted Heat Pump Systems</a>
+                                                                <a href="hvac.html#ProjectsTab-13" class="dropdown-item">Hot Water Heat Pumps</a>
+                                                                <a href="hvac.html#ProjectsTab-14" class="dropdown-item">Ventilation Systems</a>
+                                                                <a href="hvac.html#ProjectsTab-15" class="dropdown-item">Heat Recovery Ventilation (HRV) Systems</a>
+                                                                <a href="hvac.html#ProjectsTab-21" class="dropdown-item">Project Management</a>
+                                                                <a href="hvac.html#ProjectsTab-22" class="dropdown-item">Commercial HVAC Installations</a>
+                                                                <a href="hvac.html#ProjectsTab-23" class="dropdown-item">Commissioning</a>
+                                                                <a href="hvac.html#ProjectsTab-24" class="dropdown-item">Maintenance, Compliance & BWOF</a>
+                                                                <a href="hvac.html#ProjectsTab-1" class="dropdown-item">Innovative Value Engineering</a>
+                                                                <a href="hvac.html#ProjectsTab-2" class="dropdown-item">Mechanical & Hydraulic Engineering</a>
+                                                                <a href="hvac.html#ProjectsTab-3" class="dropdown-item">Seismic Design Expertise</a>
+                                                                <a href="hvac.html#ProjectsTab-4" class="dropdown-item">Regulatory Compliance</a>
+                                                                <a href="hvac.html#ProjectsTab-5" class="dropdown-item">Producer Statements (PS1, PS2, PS3, PS4)</a>
+                                                                <a href="hvac.html#ProjectsTab-6" class="dropdown-item">Fixed-Fee Pricing & Early Budget Estimates</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <!-- Automation -->
+                                                    <div class="accordion-item">
+                                                        <h2 class="accordion-header" id="headingAutomation">
+                                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAutomation">
+                                                            Instrumentation & Automation
+                                                            </button>
+                                                        </h2>
+                                                        <div id="collapseAutomation" class="accordion-collapse collapse" data-bs-parent="#serviceAccordion">
+                                                            <div class="accordion-body">
+                                                                <a href="instrumentation.html" class="dropdown-item">Instrumentation &amp; Control</a>
+                                                                <a href="#" class="dropdown-item">Fire &amp; Gas Mapping</a>
+                                                                <a href="#" class="dropdown-item">Functional Safety</a>
+                                                                <a href="#" class="dropdown-item">Machine Safety</a>
+                                                                <a href="#" class="dropdown-item">Control Panel Manufacturing</a>
+                                                                <a href="#" class="dropdown-item">Electronic Repairs</a>
+                                                                <a href="#" class="dropdown-item">Rail Signaling</a>
+                                                                <a href="#" class="dropdown-item">Other Services</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <!-- Electrical -->
+                                                    <div class="accordion-item">
+                                                        <h2 class="accordion-header" id="headingElectrical">
+                                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseElectrical">
+                                                            Electrical Works
+                                                            </button>
+                                                        </h2>
+                                                        <div id="collapseElectrical" class="accordion-collapse collapse" data-bs-parent="#serviceAccordion">
+                                                            <div class="accordion-body">
+                                                                <a href="electrical.html" class="dropdown-item">HT & LT Systems</a>
+                                                                <a href="#" class="dropdown-item">Panel Boards</a>
+                                                                <a href="#" class="dropdown-item">Maintenance</a>
+                                                                <a href="#" class="dropdown-item">Wiring & Cabling</a>
+                                                                <a href="#" class="dropdown-item">Lighting</a>
+                                                                <a href="#" class="dropdown-item">Compliance</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div><!-- Mobile End -->
                                         </div>
                                     </div>
                                     <a href="iqp.html" class="nav-item nav-link">IQP</a>
@@ -382,6 +536,16 @@
 
         <!-- Template Javascript -->
         <script src="js/main.js"></script>
+        <script>
+            document.addEventListener("DOMContentLoaded", () => {
+            // Prevent dropdown from closing when clicking inside accordion buttons
+            document.querySelectorAll(".accordion-button").forEach(btn => {
+                btn.addEventListener("click", (e) => {
+                e.stopPropagation();
+                });
+            });
+            });
+        </script>
     </body>
 
 </html>
