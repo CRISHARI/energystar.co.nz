@@ -46,7 +46,7 @@
 
         
 
-        <!-- Navbar & Hero Start -->
+         <!-- Navbar & Hero Start -->
         <div class="container-fluid header-top">
             <div class="container d-flex align-items-center">
                 <div class="d-flex align-items-center h-100">
@@ -103,14 +103,168 @@
                                 <div class="navbar-nav mx-0 mx-lg-auto bg-white">
                                     <a href="index.html" class="nav-item nav-link active">Home</a>
                                     <a href="about.html" class="nav-item nav-link">About</a>
-                                    <div class="nav-item dropdown">
-                                        <a href="#" class="nav-link" data-bs-toggle="dropdown">
-                                            <span class="dropdown-toggle">Service</span>
-                                        </a>
-                                        <div class="dropdown-menu">
-                                            <a href="hvac.html" class="dropdown-item">HVAC</a>
-                                            <a href="instrumentation.html" class="dropdown-item">Instrumentation &amp; Automation (Industrial)</a>
-                                            <a href="electrical.html" class="dropdown-item">Electrical Services (Industrial &amp; Residential)</a>
+                                    <div class="nav-item dropdown megamenu">
+                                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Service</a>
+                                        <div class="dropdown-menu p-4 border-0 shadow-lg w-100" data-bs-auto-close="false">
+                                            <!-- Desktop Version -->
+                                            <div class="row d-none d-lg-flex">
+                                                <!-- Left Sidebar Tabs -->
+                                                <div class="col-lg-3 border-end">
+                                                    <div class="nav flex-column nav-pills" id="service-tabs" role="tablist">
+                                                        <button class="nav-link active" id="hvac-tab" data-bs-toggle="pill" data-bs-target="#hvac-pane" type="button" role="tab">HVAC</button>
+                                                        <button class="nav-link" id="automation-tab" data-bs-toggle="pill" data-bs-target="#automation-pane" type="button" role="tab">Instrumentation & Automation</button>
+                                                        <button class="nav-link" id="electrical-tab" data-bs-toggle="pill" data-bs-target="#electrical-pane" type="button" role="tab">Electrical Services</button>
+                                                    </div>
+                                                </div>
+
+                                                <!-- Right Side Content -->
+                                                <div class="col-lg-9">
+                                                    <div class="tab-content" id="service-tabs-content">
+
+                                                        <!-- HVAC -->
+                                                        <div class="tab-pane fade show active" id="hvac-pane" role="tabpanel">
+                                                            <div class="row">
+                                                                <div class="col-lg-4">
+                                                                    <h6 class="text-primary">Residential Services</h6>
+                                                                    <a href="hvac.html#ProjectsTab-11" class="dropdown-item">Heat Pump Solutions</a>
+                                                                    <a href="hvac.html#ProjectsTab-12" class="dropdown-item">Ducted Heat Pump Systems</a>
+                                                                    <a href="hvac.html#ProjectsTab-13" class="dropdown-item">Hot Water Heat Pumps</a>
+                                                                    <a href="hvac.html#ProjectsTab-14" class="dropdown-item">Ventilation Systems</a>
+                                                                    <a href="hvac.html#ProjectsTab-15" class="dropdown-item">Heat Recovery Ventilation (HRV) Systems</a>
+                                                                </div>
+                                                                <div class="col-lg-4">
+                                                                    <h6 class="text-primary">Commercial Services</h6>
+                                                                    <a href="hvac.html#ProjectsTab-21" class="dropdown-item">Project Management</a>
+                                                                    <a href="hvac.html#ProjectsTab-22" class="dropdown-item">Commercial HVAC Installations</a>
+                                                                    <a href="hvac.html#ProjectsTab-23" class="dropdown-item">Commissioning</a>
+                                                                    <a href="hvac.html#ProjectsTab-24" class="dropdown-item">Maintenance, Compliance & BWOF</a>
+                                                                </div>
+                                                                <div class="col-lg-4">
+                                                                    <h6 class="text-primary">Design and Engineering</h6>
+                                                                    <a href="hvac.html#ProjectsTab-1" class="dropdown-item">Innovative Value Engineering</a>
+                                                                    <a href="hvac.html#ProjectsTab-2" class="dropdown-item">Mechanical & Hydraulic Engineering</a>
+                                                                    <a href="hvac.html#ProjectsTab-3" class="dropdown-item">Seismic Design Expertise</a>
+                                                                    <a href="hvac.html#ProjectsTab-4" class="dropdown-item">Regulatory Compliance</a>
+                                                                    <a href="hvac.html#ProjectsTab-5" class="dropdown-item">Producer Statements (PS1, PS2, PS3, PS4)</a>
+                                                                    <a href="hvac.html#ProjectsTab-6" class="dropdown-item">Fixed-Fee Pricing & Early Budget Estimates</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <!-- Automation -->
+                                                        <div class="tab-pane fade" id="automation-pane" role="tabpanel">
+                                                            <div class="row">
+                                                                <div class="col-lg-6">
+                                                                    <h6 class="text-primary">Industrial</h6>
+                                                                    <a href="instrumentation.html" class="dropdown-item">Instrumentation &amp; Control</a>
+                                                                    <a href="#" class="dropdown-item">Fire &amp; Gas Mapping</a>
+                                                                    <a href="#" class="dropdown-item">Functional Safety</a>
+                                                                    <a href="#" class="dropdown-item">Machine Safety</a>
+                                                                    <a href="#" class="dropdown-item">Other Services</a>
+                                                                </div>
+                                                                <div class="col-lg-6">
+                                                                    <h6 class="text-primary">Automation</h6>
+                                                                    <a href="#" class="dropdown-item">Control Panel Manufacturing</a>
+                                                                    <a href="#" class="dropdown-item">Electronic Repairs</a>
+                                                                    <a href="#" class="dropdown-item">Rail Signaling</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <!-- Electrical -->
+                                                        <div class="tab-pane fade" id="electrical-pane" role="tabpanel">
+                                                            <div class="row">
+                                                                <div class="col-lg-6">
+                                                                    <h6 class="text-primary">Industrial</h6>
+                                                                    <a href="electrical.html" class="dropdown-item">HT & LT Systems</a>
+                                                                    <a href="#" class="dropdown-item">Panel Boards</a>
+                                                                    <a href="#" class="dropdown-item">Maintenance</a>
+                                                                </div>
+                                                                <div class="col-lg-6">
+                                                                    <h6 class="text-primary">Residential</h6>
+                                                                    <a href="#" class="dropdown-item">Wiring & Cabling</a>
+                                                                    <a href="#" class="dropdown-item">Lighting</a>
+                                                                    <a href="#" class="dropdown-item">Compliance</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- Mobile Version -->
+                                            <div class="d-lg-none">
+                                                <div class="accordion" id="serviceAccordion">
+
+                                                    <!-- HVAC -->
+                                                    <div class="accordion-item">
+                                                        <h2 class="accordion-header" id="headingHVAC">
+                                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseHVAC">
+                                                            HVAC
+                                                            </button>
+                                                        </h2>
+                                                        <div id="collapseHVAC" class="accordion-collapse collapse" data-bs-parent="#serviceAccordion">
+                                                            <div class="accordion-body">
+                                                                <a href="hvac.html#ProjectsTab-11" class="dropdown-item">Heat Pump Solutions</a>
+                                                                <a href="hvac.html#ProjectsTab-12" class="dropdown-item">Ducted Heat Pump Systems</a>
+                                                                <a href="hvac.html#ProjectsTab-13" class="dropdown-item">Hot Water Heat Pumps</a>
+                                                                <a href="hvac.html#ProjectsTab-14" class="dropdown-item">Ventilation Systems</a>
+                                                                <a href="hvac.html#ProjectsTab-15" class="dropdown-item">Heat Recovery Ventilation (HRV) Systems</a>
+                                                                <a href="hvac.html#ProjectsTab-21" class="dropdown-item">Project Management</a>
+                                                                <a href="hvac.html#ProjectsTab-22" class="dropdown-item">Commercial HVAC Installations</a>
+                                                                <a href="hvac.html#ProjectsTab-23" class="dropdown-item">Commissioning</a>
+                                                                <a href="hvac.html#ProjectsTab-24" class="dropdown-item">Maintenance, Compliance & BWOF</a>
+                                                                <a href="hvac.html#ProjectsTab-1" class="dropdown-item">Innovative Value Engineering</a>
+                                                                <a href="hvac.html#ProjectsTab-2" class="dropdown-item">Mechanical & Hydraulic Engineering</a>
+                                                                <a href="hvac.html#ProjectsTab-3" class="dropdown-item">Seismic Design Expertise</a>
+                                                                <a href="hvac.html#ProjectsTab-4" class="dropdown-item">Regulatory Compliance</a>
+                                                                <a href="hvac.html#ProjectsTab-5" class="dropdown-item">Producer Statements (PS1, PS2, PS3, PS4)</a>
+                                                                <a href="hvac.html#ProjectsTab-6" class="dropdown-item">Fixed-Fee Pricing & Early Budget Estimates</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <!-- Automation -->
+                                                    <div class="accordion-item">
+                                                        <h2 class="accordion-header" id="headingAutomation">
+                                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAutomation">
+                                                            Instrumentation & Automation
+                                                            </button>
+                                                        </h2>
+                                                        <div id="collapseAutomation" class="accordion-collapse collapse" data-bs-parent="#serviceAccordion">
+                                                            <div class="accordion-body">
+                                                                <a href="instrumentation.html" class="dropdown-item">Instrumentation &amp; Control</a>
+                                                                <a href="#" class="dropdown-item">Fire &amp; Gas Mapping</a>
+                                                                <a href="#" class="dropdown-item">Functional Safety</a>
+                                                                <a href="#" class="dropdown-item">Machine Safety</a>
+                                                                <a href="#" class="dropdown-item">Control Panel Manufacturing</a>
+                                                                <a href="#" class="dropdown-item">Electronic Repairs</a>
+                                                                <a href="#" class="dropdown-item">Rail Signaling</a>
+                                                                <a href="#" class="dropdown-item">Other Services</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <!-- Electrical -->
+                                                    <div class="accordion-item">
+                                                        <h2 class="accordion-header" id="headingElectrical">
+                                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseElectrical">
+                                                            Electrical Works
+                                                            </button>
+                                                        </h2>
+                                                        <div id="collapseElectrical" class="accordion-collapse collapse" data-bs-parent="#serviceAccordion">
+                                                            <div class="accordion-body">
+                                                                <a href="electrical.html" class="dropdown-item">HT & LT Systems</a>
+                                                                <a href="#" class="dropdown-item">Panel Boards</a>
+                                                                <a href="#" class="dropdown-item">Maintenance</a>
+                                                                <a href="#" class="dropdown-item">Wiring & Cabling</a>
+                                                                <a href="#" class="dropdown-item">Lighting</a>
+                                                                <a href="#" class="dropdown-item">Compliance</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div><!-- Mobile End -->
                                         </div>
                                     </div>
                                     <a href="iqp.html" class="nav-item nav-link">IQP</a>
@@ -166,26 +320,365 @@
         </div>
         <!-- Header End -->
 
-
-        <!-- Projects Start -->
-        <div class="container-fluid projects bg-light py-5">
+        <!-- Services Start -->
+        <div class="container-fluid service py-5" id="service">
             <div class="container py-5">
+                <div class="d-flex flex-column mx-auto mb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 1000px;">
+                    <h4 class="text-primary">Our provide range of services</h4>
+                    <h1 class="display-4 mb-4">HVAC Design, Installation, and Maintenance</h1>
+                    <p class="mb-0" style="color: #0e0e0f;">We are specialist air conditioning and ventilation designers, providing comprehensive design and planning services tailored to each project. By collaborating closely with developers, architects, builders, and HVAC installers, we ensure every system is designed and delivered to the highest standard. Our approach balances performance with practicality—focusing on cost efficiency, ease of installation, and seamless integration with the building’s architecture and other essential services.
+                    </p>
+                    <p class="mb-5" style="color: #0e0e0f;">We design, install, and maintain HVAC systems that create safe, comfortable, and energy-efficient environments for both industrial facilities and commercial buildings. Our solutions are built to meet New Zealand standards while incorporating the latest sustainable technologies for better performance and lower operating costs.
+                    </p>                    
+                </div>
+                <h4 class="text-primary text-center">Specialist Services</h4>
+                <br>
                 <div class="row g-5">
-                    <div class="col-lg-12">
-                        <h4 class="text-primary">HVAC Design and Engineering</h4>
-                        <p class="mb-5" style="color: #0e0e0f;">We deliver innovative heating, ventilation, and air conditioning (HVAC) design and engineering solutions for projects of every scale and complexity. Our expertise spans mechanical and hydraulic engineering, seismic design, and full regulatory compliance, ensuring every system is safe, efficient, and built to last. To provide clarity and confidence, our contractors supply detailed producer statements (PS1–PS4) and offer fixed-fee pricing for complete transparency. With a commitment to high-quality outcomes, our team designs HVAC systems that are reliable, energy-efficient, and tailored to meet the unique requirements of each project.
+                    <div class="col-lg-6 wow fadeInUp" style="border: 2px solid #f8910b; color: #0e0e0f;">
+                        <br>
+                        <h5>Detailed Mechanical Specifications</h5>
+                        <p>We provide clear and comprehensive mechanical specifications tailored to each project, ensuring every system is designed for optimal functionality, efficiency, and performance.
+                        </p>
+                        <h5>Council Consent Documentation</h5>
+                        <p>Our team manages all necessary council consent documentation with precision, streamlining the approval process and guaranteeing full compliance with regulatory requirements.
+                        </p>
+                        <h5>PS1 & PS4 Documentation</h5>
+                        <p>From design to completion, we prepare PS1 certificates for design compliance and PS4 certificates for construction monitoring, giving you confidence that your project meets all relevant codes and standards.
+                        </p>
+                    </div>
+                    <div class="col-lg-6 wow fadeInUp" style="background-color: #f8910b; color: #0e0e0f;">
+                        <br>
+                        <b>HVAC Design has extensive experience in creating tailored HVAC layouts for residential, commercial, and industrial projects across a wide range of applications.
+                        </b>
+                        <br><br>
+                        <h5> Fresh Air Ventilation</h5>
+                        <p>We design systems that deliver a continuous supply of clean, fresh air to indoor spaces, creating healthier environments and significantly improving air quality.
+                        </p>
+                        <h5>Exhaust Air Ventilation</h5>
+                        <p>Our exhaust solutions are engineered to efficiently remove stale or contaminated air, maintaining safe, comfortable, and high-quality indoor conditions.
+                        </p>
+                        <h5>Carpark Ventilation</h5>
+                        <p>We provide customised ventilation designs for carparks, ensuring effective air circulation and the safe removal of vehicle exhaust emissions.
+                        </p>                        
+                    </div>                    
+                </div>
+                <div class="row g-5">
+                    <div class="col-lg-6 wow fadeInUp" style="background-color: #f8910b; color: #0e0e0f;">
+                        <br>
+                        <h5>Duct Sizing & Design</h5>
+                        <p>We deliver accurate duct designs that optimise airflow, maximise efficiency, and enhance overall system performance, customised to the requirements of each project.
+                        </p>
+                        <h5>Piping Layouts</h5>
+                        <p>Our piping layouts are engineered for efficiency and reliability, ensuring smooth operation and long-term energy savings.
+                        </p>
+                        <h5>Comprehensive CAD Drawings</h5>
+                        <p>We produce detailed CAD drawings that meet New Zealand Building Standards, incorporating all ventilation specifications, fresh air provisions, and exhaust system requirements.
+                        </p>
+                    </div>
+                    <div class="col-lg-6 wow fadeInUp"  style="border: 2px solid #f8910b; color: #0e0e0f;">
+                        <br>
+                        <h5>Air Conditioning</h5>
+                        <p>We specialise in VRV and ducted air conditioning systems, delivering customised solutions designed to provide exceptional comfort and energy efficiency.
+                        </p>
+                        <h5>Process Cooling</h5>
+                        <p>Our advanced cooling solutions are engineered for high-sensible load environments such as computer server rooms and specialised facilities, ensuring reliable performance and precise temperature control.
+                        </p>
+                        <h5>Heat Recovery Ventilation (HRV)</h5>
+                        <p>We design efficient HRV systems that capture and reuse heat energy, reducing heating costs while maintaining a constant supply of fresh, healthy air.
                         </p>
                     </div>
                 </div>
+            </div>
+        </div>
+        <!-- Services End -->
+
+        
+        <!-- Projects Start -->
+        <div class="container-fluid projects bg-light py-5">
+            <div class="container py-5">                
+                <div class="row g-5">
+                    <div class="col-lg-12">
+                        <h4 class="text-primary text-center">HVAC Design, Installation, and Maintenance</h4>
+                        <p class="mb-5" style="color: #0e0e0f;">We deliver innovative heating, ventilation, and air conditioning (HVAC) design and engineering solutions for projects of every scale and complexity. Our expertise spans mechanical and hydraulic engineering, seismic design, and full regulatory compliance, ensuring every system is safe, efficient, and built to last. To provide clarity and confidence, our contractors supply detailed producer statements (PS1–PS4) and offer fixed-fee pricing for complete transparency. With a commitment to high-quality outcomes, our team designs HVAC systems that are reliable, energy-efficient, and tailored to meet the unique requirements of each project.
+                        </p>
+                        <p class="mb-5" style="color: #0e0e0f;">We deliver complete HVAC solutions for residential and commercial projects across New Zealand. From custom system design to professional installation and ongoing maintenance, our services ensure comfort, energy efficiency, and long-term sustainability.
+                        </p>
+                    </div>
+                </div>
+                <br>
+                <h4 class="text-primary text-center">Our HVAC Residential Services</h4>
+                <br>
                 <div class="row g-5">
                     <div class="col-lg-5 wow fadeInLeft" data-wow-delay="0.2s">
-                        <div>
-                            <h4 class="text-primary">Our Service</h4>
-                            <!-- <h3 class="display-4 mb-4">How to work Our HVAC Services</h3> -->
-                            <p class="mb-5" style="color: #0e0e0f;">We design, install, and maintain HVAC systems that create safe, comfortable, and energy-efficient environments for both industrial facilities and commercial buildings. Our solutions are built to meet New Zealand standards while incorporating the latest sustainable technologies for better performance and lower operating costs.
-                            </p>
-                            <p class="mb-5" style="color: #0e0e0f;">We deliver complete HVAC solutions for residential and commercial projects across New Zealand. From custom system design to professional installation and ongoing maintenance, our services ensure comfort, energy efficiency, and long-term sustainability.
-                            </p>
+                        <div>                            
+                            <!-- <h3 class="display-4 mb-4">How to work Our HVAC Services</h3> -->                            
+                            <ul class="nav">
+                                <li class="nav-item bg-white mb-4 w-100">
+                                    <a class="d-flex align-items-center h4 mb-0 p-3 active" data-bs-toggle="pill" href="#ProjectsTab-11">
+                                        <div class="projects-icon btn-md-square bg-primary text-white me-3"><span class="fas fa-bolt small"></span></div><span>Heat Pump Solutions</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item bg-white mb-4 w-100">
+                                    <a class="d-flex align-items-center h4 mb-0 p-3" data-bs-toggle="pill" href="#ProjectsTab-12">
+                                        <div class="projects-icon btn-md-square bg-primary text-white me-3"><span class="fas fa-charging-station small"></span></div><span>Ducted Systems</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item bg-white mb-4 w-100">
+                                    <a class="d-flex align-items-center h4 mb-0 p-3" data-bs-toggle="pill" href="#ProjectsTab-13">
+                                        <div class="projects-icon btn-md-square bg-primary text-white me-3"><span class="fas fa-broadcast-tower small"></span></div><span>Hot Water Heat Pumps</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item bg-white mb-4 w-100">
+                                    <a class="d-flex align-items-center h4 mb-0 p-3" data-bs-toggle="pill" href="#ProjectsTab-14">
+                                        <div class="projects-icon btn-md-square bg-primary text-white me-3"><span class="fas fa-bolt small"></span></div><span>Ventilation Systems</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item bg-white mb-4 w-100">
+                                    <a class="d-flex align-items-center h4 mb-0 p-3" data-bs-toggle="pill" href="#ProjectsTab-15">
+                                        <div class="projects-icon btn-md-square bg-primary text-white me-3"><span class="fas fa-bolt small"></span></div><span>Heat Recovery Ventilation (HRV) Systems</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item bg-white mb-4 w-100">
+                                    <a class="d-flex align-items-center h4 mb-0 p-3" data-bs-toggle="pill" href="#ProjectsTab-16">
+                                        <div class="projects-icon btn-md-square bg-primary text-white me-3"><span class="fas fa-bolt small"></span></div><span>Electrical Certification</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-7 wow fadeInRight" data-wow-delay="0.2s">
+                        <div class="tab-content">
+                            <div id="ProjectsTab-11" class="tab-pane fade show p-0 active">
+                                <div class="projects-item">
+                                    <!-- <img src="img/banner-B.webp" class="img-fluid w-100" alt=""> -->
+                                    <div class="projects-content bg-white p-4">
+                                        <h4 class="mb-3">Heat Pump Solutions</h4>
+                                        <h5 class="mb-4">Installation</h5>
+                                        <p class="mb-4" style="color: #0e0e0f;">At Energy Star, we do more than just install heat pumps – we customise every system to suit your home, lifestyle, and comfort needs. From high-wall units and floor consoles to cassette systems or multi-split setups for multiple rooms, our certified installers handle everything with precision and care. We’ll help you choose the best solution for your space and complete the installation neatly, discreetly, and correctly the first time. With decades of experience and a proven track record of successful installs, you can rely on us to deliver year-round comfort – warm in winter, cool in summer – with no stress, no shortcuts, and no mess.
+                                        </p>
+                                        <h5 class="mb-4">Maintenance & Servicing</h5>
+                                        <p class="mb-4" style="color: #0e0e0f;">Your heat pump is a long-term investment, and regular servicing is the key to keeping it efficient, reliable, and cost-effective. Our maintenance programs are designed to extend the lifespan of your system, reduce running costs, and keep your indoor air fresh and healthy. Whether it’s routine servicing, a deep clean, or urgent repairs, our skilled technicians have you covered. We provide filter cleans, airflow checks, and system tune-ups to ensure optimal performance – and if something ever goes wrong, we’ll get it fixed quickly with genuine parts and expert care.
+                                        </p>
+                                        <h5 class="mb-4">What’s Included in Your Energy Star Heat Pump Service</h5>
+                                        <b>Indoor Unit Service</b>
+                                        <p class="mb-4" style="color: #0e0e0f;">
+                                            ✔️ Filters cleaned and sanitised<br>
+                                            ✔️ Evaporator coils treated for efficiency<br>
+                                            ✔️ Condensate tray cleared to prevent leaks<br>
+                                            ✔️ Full operational and temperature check<br>
+                                        </p>
+                                        <b>Outdoor Unit Service</b>
+                                        <p class="mb-4" style="color: #0e0e0f;">
+                                            ✔️ Condenser coils cleaned and cleared of debris<br>
+                                            ✔️ Safety inspection of components<br>
+                                            ✔️ Fan and motor checked for smooth operation<br>
+                                            ✔️ Pipe insulation and airflow verified<br>
+                                        </p>
+                                        <h5 class="mb-4">Bring your vision to life—start your smarter project journey with us today.</h5>
+                                        <a class="btn btn-primary py-3 px-4 px-md-5 ms-2" href="contact.html">Contact us</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="ProjectsTab-12" class="tab-pane fade show p-0">
+                                <div class="projects-item">
+                                    <!-- <img src="img/industrial-2.jpg" class="img-fluid w-100" alt=""> -->
+                                    <div class="projects-content bg-white p-4">
+                                        <h4 class="mb-3">Ducted Systems</h4>
+                                        <h5>Installation</h5>
+                                        <p class="mb-4" style="color: #0e0e0f;">At Energy Star, our ducted heat pump systems are designed to provide the highest level of comfort and efficiency. Quiet, discreet, and tailored to your home’s layout, these systems deliver even airflow throughout every room. Our team carefully designs each system to suit your lifestyle, ensuring optimal performance and seamless integration with your home’s architecture. From planning to zoning, we take care of every detail so you enjoy year-round comfort without the clutter of visible units.
+                                        </p>
+                                        <h5>Servicing</h5>
+                                        <p class="mb-4" style="color: #0e0e0f;">To ensure your ducted system continues running smoothly, Energy Star offers thorough servicing and maintenance. Our technicians inspect all key components – including filters, ducting, fans, and temperature sensors – to keep your system efficient and reliable. With proactive care, we help prevent costly issues, extend system life, and ensure every room in your home maintains consistent, healthy, and comfortable air quality.
+                                        </p>                                                                             
+                                        <h5 class="mb-4">Bring your vision to life—start your smarter project journey with us today.</h5>
+                                        <a class="btn btn-primary py-3 px-4 px-md-5 ms-2" href="contact.html">Contact us</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="ProjectsTab-13" class="tab-pane fade show p-0">
+                                <div class="projects-item">
+                                    <!-- <img src="img/commercial-1.jpg" class="img-fluid w-100" alt=""> -->
+                                    <div class="projects-content bg-white p-4">
+                                        <h4 class="mb-3">Hot Water Heat Pumps</h4>
+                                        <h5>Installation & Servicing</h5>
+                                        <p class="mb-4" style="color: #0e0e0f;">Hot water heat pumps are one of the smartest ways to heat your water – using the natural energy in the air to deliver reliable performance while cutting your power bills. Our high-efficiency systems are designed around your household’s needs, providing a steady supply of hot water at a fraction of the energy cost of traditional cylinders.
+                                        </p>
+                                        <p class="mb-4" style="color: #0e0e0f;">From system sizing and placement to full installation, our team takes care of everything for a seamless fit in your home. And with regular servicing, performance checks, and ongoing support, we’ll make sure your unit keeps running at peak efficiency – saving you money year after year and giving you complete peace of mind.
+                                        </p>                                                                                                                        
+                                        <h5 class="mb-4">Bring your vision to life—start your smarter project journey with us today.</h5>
+                                        <a class="btn btn-primary py-3 px-4 px-md-5 ms-2" href="contact.html">Contact us</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="ProjectsTab-14" class="tab-pane fade show p-0">
+                                <div class="projects-item">
+                                    <!-- <img src="img/commercial-2.jpg" class="img-fluid w-100" alt=""> -->
+                                    <div class="projects-content bg-white p-4">
+                                        <h4 class="mb-3">Ventilation Systems</h4>
+                                        <h5>Fresh, Healthy Air for Your Home</h5>
+                                        <p class="mb-4" style="color: #0e0e0f;">A dry, well-ventilated home is a healthier home. Without proper airflow, dampness and mould can build up – especially in modern, airtight homes. Our ventilation solutions are designed to prevent these problems, keeping your living spaces fresh, dry, and comfortable all year round.
+                                        </p>
+                                        <p class="mb-4" style="color: #0e0e0f;">We install everything from simple extraction fans for bathrooms and kitchens to fully ducted whole-home systems that continuously remove stale air and bring in fresh air. Each solution is carefully tailored to your home’s layout and your family’s needs, whether you’re building new or improving an existing property.
+                                        </p>
+                                        <p class="mb-4" style="color: #0e0e0f;">With our expert team guiding you every step of the way, you’ll enjoy better airflow, reduced condensation, and a healthier living environment – all delivered with the same professionalism and care that sets us apart.
+                                        </p>                                        
+                                        <h5 class="mb-4">Partner with Energy Star, and work with a team that brings unmatched expertise in compliance and assurance.</h5>
+                                        <a class="btn btn-primary py-3 px-4 px-md-5 ms-2" href="contact.html">Contact us</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="ProjectsTab-15" class="tab-pane fade show p-0">
+                                <div class="projects-item">
+                                    <!-- <img src="img/commercial-2.jpg" class="img-fluid w-100" alt=""> -->
+                                    <div class="projects-content bg-white p-4">
+                                        <h4 class="mb-3">Heat Recovery Ventilation (HRV) Systems</h4>
+                                        <h5>Fresh Air Without Losing Heat</h5>
+                                        <p class="mb-4" style="color: #0e0e0f;">HRV systems are designed for today’s well-insulated homes, delivering a constant supply of clean outdoor air while capturing and reusing the warmth from the air being extracted. That means healthier air for your family without wasting the heat you’ve already paid for.
+                                        </p>                                        
+                                        <p class="mb-4" style="color: #0e0e0f;">Our team provides expert design and installation of HRV systems that keep your home fresh, dry, and comfortable year-round. By reducing condensation and controlling moisture, these systems create a healthier living environment and improve overall energy efficiency – a real benefit during Canterbury’s colder months.
+                                        </p>
+                                        <p class="mb-4" style="color: #0e0e0f;">We’ll guide you through the best HRV option for your home and lifestyle, then install it with care to ensure lasting performance. Fresher air, lower running costs, and consistent comfort – all made simple with our expertise.
+                                        </p>
+                                        <h5 class="mb-4">Choose a team that offers more than services—we provide assurance every step of the way. Get in touch with us now.</h5>
+                                        <a class="btn btn-primary py-3 px-4 px-md-5 ms-2" href="contact.html">Contact us</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="ProjectsTab-16" class="tab-pane fade show p-0">
+                                <div class="projects-item">
+                                    <!-- <img src="img/commercial-2.jpg" class="img-fluid w-100" alt=""> -->
+                                    <div class="projects-content bg-white p-4">
+                                        <h4 class="mb-3">Electrical Certification</h4>
+                                        <h5>Safety First, Every Time</h5>
+                                        <p class="mb-4" style="color: #0e0e0f;">At Energy Star, safety is built into everything we do. Every residential installation comes with a full electrical certificate of compliance, giving you peace of mind that all work is completed to New Zealand safety codes and industry standards.
+                                        </p>
+                                        <p class="mb-4" style="color: #0e0e0f;">Our licensed installers are highly trained and qualified to deliver electrical work with precision and care. That means your system isn’t just efficient and reliable – it’s also installed safely, legally, and to the highest standard. It’s why so many Canterbury homeowners trust Beattie Air for dependable heating, cooling, and ventilation solutions.
+                                        </p>
+                                        <p class="mb-4" style="color: #0e0e0f;">By engaging us early in the design phase, you can avoid budget overruns and secure cost-effective HVAC solutions that support the overall success of your project.
+                                        </p>                                        
+                                        <a class="btn btn-primary py-3 px-4 px-md-5 ms-2" href="contact.html">Contact us</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <h4 class="text-primary text-center">Our Commercial HVAC Services</h4>
+                <br>
+                <div class="row g-5">
+                    <div class="col-lg-5 wow fadeInLeft" data-wow-delay="0.2s">
+                        <div>                            
+                            <!-- <h3 class="display-4 mb-4">How to work Our HVAC Services</h3> -->                            
+                            <ul class="nav">
+                                <li class="nav-item bg-white mb-4 w-100">
+                                    <a class="d-flex align-items-center h4 mb-0 p-3 active" data-bs-toggle="pill" href="#ProjectsTab-21">
+                                        <div class="projects-icon btn-md-square bg-primary text-white me-3"><span class="fas fa-bolt small"></span></div><span>Project Management</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item bg-white mb-4 w-100">
+                                    <a class="d-flex align-items-center h4 mb-0 p-3" data-bs-toggle="pill" href="#ProjectsTab-22">
+                                        <div class="projects-icon btn-md-square bg-primary text-white me-3"><span class="fas fa-charging-station small"></span></div><span>Commercial HVAC Installations</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item bg-white mb-4 w-100">
+                                    <a class="d-flex align-items-center h4 mb-0 p-3" data-bs-toggle="pill" href="#ProjectsTab-23">
+                                        <div class="projects-icon btn-md-square bg-primary text-white me-3"><span class="fas fa-broadcast-tower small"></span></div><span>Commissioning</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item bg-white mb-4 w-100">
+                                    <a class="d-flex align-items-center h4 mb-0 p-3" data-bs-toggle="pill" href="#ProjectsTab-24">
+                                        <div class="projects-icon btn-md-square bg-primary text-white me-3"><span class="fas fa-bolt small"></span></div><span>Maintenance &amp; Compliance</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-7 wow fadeInRight" data-wow-delay="0.2s">
+                        <div class="tab-content">
+                            <div id="ProjectsTab-21" class="tab-pane fade show p-0 active">
+                                <div class="projects-item">
+                                    <!-- <img src="img/banner-B.webp" class="img-fluid w-100" alt=""> -->
+                                    <div class="projects-content bg-white p-4">
+                                        <h4 class="mb-3">Project Management</h4>
+                                        <h5>End-to-End HVAC Project Oversight
+                                        </h5>
+                                        <p class="mb-4" style="color: #0e0e0f;">Energy Star offers complete HVAC project management, ensuring your system is delivered efficiently, on time, and within budget.
+                                        </p>
+                                        <p class="mb-4" style="color: #0e0e0f;">From initial consultation and customised design to procurement, installation, and commissioning, we manage every stage with care and precision. Our team ensures compliance with New Zealand standards, optimises system performance, and provides documentation, training, and ongoing support for smooth, reliable operation.
+                                        </p>                                        
+                                        <h5 class="mb-4">Bring your vision to life—start your smarter project journey with us today.</h5>
+                                        <a class="btn btn-primary py-3 px-4 px-md-5 ms-2" href="contact.html">Contact us</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="ProjectsTab-22" class="tab-pane fade show p-0">
+                                <div class="projects-item">
+                                    <!-- <img src="img/industrial-2.jpg" class="img-fluid w-100" alt=""> -->
+                                    <div class="projects-content bg-white p-4">
+                                        <h4 class="mb-3">Commercial HVAC Installations</h4>
+                                        <h5>Expert In-House Installation for Reliable Performance</h5>
+                                        <p class="mb-4" style="color: #0e0e0f;">At Energy Star, our experienced in-house installers handle every aspect of commercial HVAC installations, delivering precision, efficiency, and compliance. We provide tailored solutions for offices, retail spaces, hotels, industrial facilities, and large-scale commercial buildings.
+                                        </p>
+                                        <p class="mb-4" style="color: #0e0e0f;">Our team ensures seamless system integration, fitting ducted, VRF/VRV, and split systems to work smoothly with the building’s structure and services. All installations meet New Zealand seismic regulations, with secure mounting and bracing for long-term stability.
+                                        </p>
+                                        <p class="mb-4" style="color: #0e0e0f;">We manage ductwork, pipework, equipment mounting, and electrical coordination for efficient operation. With structured schedules, minimal disruption to ongoing operations, and thorough site clean-up, Energy Star guarantees commercial HVAC systems are installed reliably and ready for optimal performance.
+                                        </p>                                                                     
+                                        <h5 class="mb-4">Bring your vision to life—start your smarter project journey with us today.</h5>
+                                        <a class="btn btn-primary py-3 px-4 px-md-5 ms-2" href="contact.html">Contact us</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="ProjectsTab-23" class="tab-pane fade show p-0">
+                                <div class="projects-item">
+                                    <!-- <img src="img/commercial-1.jpg" class="img-fluid w-100" alt=""> -->
+                                    <div class="projects-content bg-white p-4">
+                                        <h4 class="mb-3">Commissioning</h4>
+                                        <h5>Precision Testing & System Optimisation</h5>
+                                        <p class="mb-4" style="color: #0e0e0f;">At Energy Star, we provide expert HVAC commissioning services to ensure every system operates at peak performance. Our team works in-house and, when needed, collaborates with manufacturers and third-party specialists to meet project standards.                                        
+                                        </p>
+                                        <p class="mb-4" style="color: #0e0e0f;">We conduct thorough testing, balancing, and calibration, verifying airflow, refrigerant charge, controls, and system integration. Functional checks under load confirm that all components— ducting, pipework, and controls—are optimised for efficiency and comfort.
+                                        </p>
+                                        <p class="mb-4" style="color: #0e0e0f;">Every commissioning process includes detailed documentation to ensure compliance with New Zealand building codes and client specifications. Where required, we fine-tune settings to maximise energy efficiency, reliability, and occupant comfort, delivering systems ready for seamless operation.
+                                        </p>
+                                        <h5>Collaborative Delivery</h5>
+                                        <p class="mb-4" style="color: #0e0e0f;">Working closely with builders, consultants, and main contractors, we deliver seismic HVAC solutions that are cost-effective, fully code-compliant, and structurally sound—providing long-term resilience and peace of mind for every project.
+                                        </p>                                                                                  
+                                        <h5 class="mb-4">Bring your vision to life—start your smarter project journey with us today.</h5>
+                                        <a class="btn btn-primary py-3 px-4 px-md-5 ms-2" href="contact.html">Contact us</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="ProjectsTab-24" class="tab-pane fade show p-0">
+                                <div class="projects-item">
+                                    <!-- <img src="img/commercial-2.jpg" class="img-fluid w-100" alt=""> -->
+                                    <div class="projects-content bg-white p-4">
+                                        <h4 class="mb-3">Maintenance &amp; Compliance
+                                        </h4>
+                                        <h5>Reliable Systems & Regulatory Compliance</h5>
+                                        <p class="mb-4" style="color: #0e0e0f;">At Energy Star, we provide ongoing HVAC maintenance and compliance services to ensure systems operate efficiently and meet all regulatory requirements. Our proactive approach helps prevent costly breakdowns while keeping your systems fully compliant.
+                                        </p>
+                                        <p class="mb-4" style="color: #0e0e0f;"><b>Preventative Maintenance – </b>Regular servicing, inspections, and component checks to maintain efficiency, extend lifespan, and avoid unexpected failures
+                                        </p>
+                                        <p class="mb-4" style="color: #0e0e0f;"><b>Fire Safety Compliance – </b>We ensure HVAC systems meet fire safety standards, including smoke damper testing, fire-rated ductwork, and mechanical ventilation checks.
+                                        </p>
+                                        <p class="mb-4" style="color: #0e0e0f;"><b>BWOF Compliance & Certification – </b>Energy Star carries out annual inspections to satisfy Building Warrant of Fitness (Form 12) requirements. We also provide Form 12A certification, verifying that all inspections and maintenance procedures meet New Zealand building regulations.
+                                        </p>                                          
+                                        <h5 class="mb-4">With Energy Star, you can trust your commercial HVAC systems to remain reliable, efficient, and fully compliant with industry and safety standards.</h5>
+                                        <a class="btn btn-primary py-3 px-4 px-md-5 ms-2" href="contact.html">Contact us</a>
+                                    </div>
+                                </div>
+                            </div>                            
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <h4 class="text-primary text-center">Our HVAC Design &amp; Engineering</h4>
+                <br>
+                <div class="row g-5">
+                    <div class="col-lg-5 wow fadeInLeft" data-wow-delay="0.2s">
+                        <div>                            
+                            <!-- <h3 class="display-4 mb-4">How to work Our HVAC Services</h3> -->                            
                             <ul class="nav">
                                 <li class="nav-item bg-white mb-4 w-100">
                                     <a class="d-flex align-items-center h4 mb-0 p-3 active" data-bs-toggle="pill" href="#ProjectsTab-1">
@@ -224,7 +717,7 @@
                         <div class="tab-content">
                             <div id="ProjectsTab-1" class="tab-pane fade show p-0 active">
                                 <div class="projects-item">
-                                    <img src="img/banner-B.webp" class="img-fluid w-100" alt="">
+                                    <!-- <img src="img/banner-B.webp" class="img-fluid w-100" alt=""> -->
                                     <div class="projects-content bg-white p-4">
                                         <h4 class="mb-3">Innovative Design Concepts</h4>
                                         <p class="mb-4" style="color: #0e0e0f;">At Energy Star, we help builders, main contractors, and property owners get more from their HVAC investment without unnecessary costs. Our value engineering process focuses on reducing waste, optimising system efficiency, and delivering long-term performance—without cutting corners.
@@ -247,7 +740,7 @@
                             </div>
                             <div id="ProjectsTab-2" class="tab-pane fade show p-0">
                                 <div class="projects-item">
-                                    <img src="img/industrial-2.jpg" class="img-fluid w-100" alt="">
+                                    <!-- <img src="img/industrial-2.jpg" class="img-fluid w-100" alt=""> -->
                                     <div class="projects-content bg-white p-4">
                                         <h4 class="mb-3">Mechanical & Hydraulic Engineering</h4>
                                         <h5>Smart, Efficient, and Integrated System Design</h5>
@@ -272,7 +765,7 @@
                             </div>
                             <div id="ProjectsTab-3" class="tab-pane fade show p-0">
                                 <div class="projects-item">
-                                    <img src="img/commercial-1.jpg" class="img-fluid w-100" alt="">
+                                    <!-- <img src="img/commercial-1.jpg" class="img-fluid w-100" alt=""> -->
                                     <div class="projects-content bg-white p-4">
                                         <h4 class="mb-3">Seismic Design Expertise</h4>
                                         <h5>Engineered for Compliance, Safety & Resilience</h5>
@@ -294,7 +787,7 @@
                             </div>
                             <div id="ProjectsTab-4" class="tab-pane fade show p-0">
                                 <div class="projects-item">
-                                    <img src="img/commercial-2.jpg" class="img-fluid w-100" alt="">
+                                    <!-- <img src="img/commercial-2.jpg" class="img-fluid w-100" alt=""> -->
                                     <div class="projects-content bg-white p-4">
                                         <h4 class="mb-3">Regulatory Compliance</h4>
                                         <h5>Built to Standard. Engineered for Assurance.</h5>
@@ -316,7 +809,7 @@
                             </div>
                             <div id="ProjectsTab-5" class="tab-pane fade show p-0">
                                 <div class="projects-item">
-                                    <img src="img/commercial-2.jpg" class="img-fluid w-100" alt="">
+                                    <!-- <img src="img/commercial-2.jpg" class="img-fluid w-100" alt=""> -->
                                     <div class="projects-content bg-white p-4">
                                         <h4 class="mb-3">Producer Statements (PS1, PS2, PS3, PS4)</h4>
                                         <h5>Full Certification for Confidence & Compliance</h5>
@@ -338,7 +831,7 @@
                             </div>
                             <div id="ProjectsTab-6" class="tab-pane fade show p-0">
                                 <div class="projects-item">
-                                    <img src="img/commercial-2.jpg" class="img-fluid w-100" alt="">
+                                    <!-- <img src="img/commercial-2.jpg" class="img-fluid w-100" alt=""> -->
                                     <div class="projects-content bg-white p-4">
                                         <h4 class="mb-3">Fixed-Fee Pricing & Early Budget Estimates</h4>
                                         <h5>Budget Certainty from Start to Finish</h5>
@@ -366,90 +859,6 @@
         </div>
         <!-- Projects End -->
 
-        <!-- Services Start -->
-        <div class="container-fluid service py-5" id="service">
-            <div class="container py-5">
-                <div class="d-flex flex-column mx-auto mb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 1000px;">
-                    <h4 class="text-primary">Our Services</h4>
-                    <h1 class="display-4 mb-4">The Best Services in HVAC Designs</h1>
-                    <p class="mb-0" style="color: #0e0e0f;">We are specialist air conditioning and ventilation designers, providing comprehensive design and planning services tailored to each project. By collaborating closely with developers, architects, builders, and HVAC installers, we ensure every system is designed and delivered to the highest standard. Our approach balances performance with practicality—focusing on cost efficiency, ease of installation, and seamless integration with the building’s architecture and other essential services.
-                    </p>
-                </div>
-                <div class="row g-5">
-                    <div class="col-lg-4 wow fadeInUp" style="border: 2px solid #f8910b;">
-                        <h5>Detailed Mechanical Specifications</h5>
-                        <p>We provide clear and comprehensive mechanical specifications tailored to each project, ensuring every system is designed for optimal functionality, efficiency, and performance.
-                        </p>
-                        <h5>Council Consent Documentation</h5>
-                        <p>Our team manages all necessary council consent documentation with precision, streamlining the approval process and guaranteeing full compliance with regulatory requirements.
-                        </p>
-                        <h5>PS1 & PS4 Documentation</h5>
-                        <p>From design to completion, we prepare PS1 certificates for design compliance and PS4 certificates for construction monitoring, giving you confidence that your project meets all relevant codes and standards.
-                        </p>
-                    </div>
-                    <div class="col-lg-4 wow fadeInUp">
-                        <h5>Stairwell Pressurisation & Lobby Relief</h5>
-                        <p>We design systems that maintain safe and efficient airflow in stairwells and lobbies, ensuring correct pressurisation to support fire safety and compliance requirements.
-                        </p>
-                        <h5>Commercial Kitchen Ventilation</h5>
-                        <p>Our team delivers expert kitchen exhaust solutions that effectively remove heat, smoke, and odors, providing a safe, comfortable, and compliant working environment.
-                        </p>
-                        <h5>Humidity Control Systems</h5>
-                        <p>We offer advanced humidity management solutions, from comfort cooling in commercial spaces to specialised applications that demand precise and consistent environmental conditions.
-                        </p>
-                    </div>
-                    <div class="col-lg-4 wow fadeInUp" style="border: 2px solid #f8910b;">
-                        <h5> Fresh Air Ventilation</h5>
-                        <p>We design systems that deliver a continuous supply of clean, fresh air to indoor spaces, creating healthier environments and significantly improving air quality.
-                        </p>
-                        <h5>Exhaust Air Ventilation</h5>
-                        <p>Our exhaust solutions are engineered to efficiently remove stale or contaminated air, maintaining safe, comfortable, and high-quality indoor conditions.
-                        </p>
-                        <h5>Carpark Ventilation</h5>
-                        <p>We provide customised ventilation designs for carparks, ensuring effective air circulation and the safe removal of vehicle exhaust emissions.
-                        </p>
-                    </div>
-                </div>
-                <br>
-                <div class="row g-5">
-                    <div class="col-lg-4 wow fadeInUp">
-                        <br>
-                        <h5>Duct Sizing & Design</h5>
-                        <p>We deliver accurate duct designs that optimise airflow, maximise efficiency, and enhance overall system performance, customised to the requirements of each project.
-                        </p>
-                        <h5>Piping Layouts</h5>
-                        <p>Our piping layouts are engineered for efficiency and reliability, ensuring smooth operation and long-term energy savings.
-                        </p>
-                        <h5>Comprehensive CAD Drawings</h5>
-                        <p>We produce detailed CAD drawings that meet New Zealand Building Standards, incorporating all ventilation specifications, fresh air provisions, and exhaust system requirements.
-                        </p>
-                    </div>
-                    <div class="col-lg-4 wow fadeInUp"  style="border: 2px solid #f8910b;">
-                        <br>
-                        <h5>Air Conditioning</h5>
-                        <p>We specialise in VRV and ducted air conditioning systems, delivering customised solutions designed to provide exceptional comfort and energy efficiency.
-                        </p>
-                        <h5>Process Cooling</h5>
-                        <p>Our advanced cooling solutions are engineered for high-sensible load environments such as computer server rooms and specialised facilities, ensuring reliable performance and precise temperature control.
-                        </p>
-                        <h5>Heat Recovery Ventilation (HRV)</h5>
-                        <p>We design efficient HRV systems that capture and reuse heat energy, reducing heating costs while maintaining a constant supply of fresh, healthy air.
-                        </p>
-                    </div>
-                    <div class="col-lg-4 wow fadeInUp">
-                        <br>
-                        <h5> Fume Ventilation</h5>
-                        <p>We design customised systems that safely extract hazardous fumes and gases from industrial and commercial environments, ensuring worker safety and full compliance with regulatory standards.
-                        </p>
-                        <h5>Laboratory Ventilation & Pressurisation</h5>
-                        <p>Our specialised laboratory solutions provide controlled ventilation and pressurisation, maintaining safe working conditions while meeting strict compliance and safety requirements.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Services End -->
-
         <!-- FAQ Start -->
          <div class="container-fluid faq-section bg-light py-5">
             <div class="container py-5">
@@ -471,7 +880,7 @@
                                         </button>
                                     </h2>
                                     <div id="collapseOne" class="accordion-collapse collapse show active" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                                        <div class="accordion-body">
+                                        <div class="accordion-body" style="color: #0e0e0f;">
                                             A: NZS 4219 requires seismic restraints to ensure HVAC equipment and services are securely fixed. This protects building occupants from falling hazards and helps keep essential systems operational after an earthquake.
                                         </div>
                                     </div>
@@ -483,7 +892,7 @@
                                         </button>
                                     </h2>
                                     <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                                        <div class="accordion-body">
+                                        <div class="accordion-body" style="color: #0e0e0f;">
                                             A: Yes. Our Chartered Professional Engineer (CPEng) can carry out independent peer reviews of calculations, design documentation, and site detailing to ensure compliance and accuracy.
                                         </div>
                                     </div>
@@ -495,8 +904,8 @@
                                         </button>
                                     </h2>
                                     <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                                        <div class="accordion-body">
-                                            A: <b>Specialist Design Team –</b> A skilled team delivering tailored solutions for every project.<br>
+                                        <div class="accordion-body" style="color: #0e0e0f;">
+                                            A: We have :<br><b>Specialist Design Team –</b> A skilled team delivering tailored solutions for every project.<br>
                                                <b>Wide Range of Clients – </b>Trusted by developers, contractors, architects, and property owners across diverse industries.<br>
                                                 <b>Proven Experience – </b>Decades of expertise ensure reliable outcomes and innovative designs.<br>
                                                 <b>Client-Focused Approach – </b>We prioritise relationships, listening carefully and delivering with care.<br>
@@ -558,7 +967,7 @@
                     <div class="col-md-6 col-lg-6 col-xl-3">
                         <div class="footer-item d-flex flex-column">
                             <h4 class="text-white mb-4">Contact Info</h4>
-                            <a href="#"><i class="fa fa-map-marker-alt text-primary me-2"></i>56 Alberta street , point chevalier, Auckland</a>
+                            <a href="#"><i class="fa fa-map-marker-alt text-primary me-2"></i> 56 Alberta street , point chevalier, Auckland</a>
                             <a href="mailto:energystarlimited@gmail.com "><i class="fas fa-envelope text-primary me-2"></i> energystarlimited@gmail.com </a>
                             <!-- <a href="mailto:info@example.com"><i class="fas fa-envelope text-primary me-2"></i> info@example.com</a> -->
                             <a href="tel:+0225007701"><i class="fas fa-phone text-primary me-2"></i> +0225007701</a>
@@ -613,8 +1022,16 @@
 
         <!-- Template Javascript -->
         <script src="js/main.js"></script>
+        <script>
+            document.addEventListener("DOMContentLoaded", () => {
+            // Prevent dropdown from closing when clicking inside accordion buttons
+            document.querySelectorAll(".accordion-button").forEach(btn => {
+                btn.addEventListener("click", (e) => {
+                e.stopPropagation();
+                });
+            });
+            });
+        </script>
     </body>
 
 </html>
-
-
