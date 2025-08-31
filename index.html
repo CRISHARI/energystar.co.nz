@@ -432,6 +432,42 @@
                     </div>
                 </div>
             </div>
+        <span
+          onclick="gotowhatsapp()"
+          class="float" style="position: fixed;
+                              width: 50px;
+                              height: 50px;
+                              bottom: 70px;
+                              right: 120px;
+                              color: #fff;
+                              border-radius: 50px;
+                              text-align: center;
+                              cursor: pointer;
+                              box-shadow: 2px 2px 3px #999;
+                              ">
+                          <img src="https://trickuweb.com/whatsapp.png"
+                          alt=""
+                          height="50px"
+                          width="50px"/>    
+        </span>
+          
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script>
+              
+              function gotowhatsappmessage(){
+                  var name=document.getElementById("name").value;
+                  var email = document.getElementById("email").value;
+                  var subject = document.getElementById("subject").value;
+                  var message = document.getElementById("message").value;
+                  var url="https://wa.me/+0225007701?text="
+                  +"Name: "+ name+"%0a"
+                  +"E-mail: "+ email+"%0a"
+                  +"Subject: "+ subject+"%0a"
+                  +"Message: "+ message;
+                  window.open(url,'_blank').focus();
+              }
+        </script>    
         </div>
         <!-- About End -->
 
@@ -932,6 +968,7 @@
                     </div>
                 </div>
             </div>
+             
          </div>
         <!-- Banner End -->
 
@@ -1089,42 +1126,7 @@
          </div> -->
         <!-- FAQ End -->
         
-        <span
-          onclick="gotowhatsapp()"
-          class="float" style="position: fixed;
-                              width: 50px;
-                              height: 50px;
-                              bottom: 70px;
-                              right: 120px;
-                              color: #fff;
-                              border-radius: 50px;
-                              text-align: center;
-                              cursor: pointer;
-                              box-shadow: 2px 2px 3px #999;
-                              ">
-                          <img src="https://trickuweb.com/whatsapp.png"
-                          alt=""
-                          height="50px"
-                          width="50px"/>    
-        </span>
           
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <script>
-              
-              function gotowhatsappmessage(){
-                  var name=document.getElementById("name").value;
-                  var email = document.getElementById("email").value;
-                  var subject = document.getElementById("subject").value;
-                  var message = document.getElementById("message").value;
-                  var url="https://wa.me/+0225007701?text="
-                  +"Name: "+ name+"%0a"
-                  +"E-mail: "+ email+"%0a"
-                  +"Subject: "+ subject+"%0a"
-                  +"Message: "+ message;
-                  window.open(url,'_blank').focus();
-              }
-        </script>  
 
         <!-- Footer Start -->
         <div class="container-fluid footer bg-dark py-5 wow fadeIn" data-wow-delay="0.2s">
